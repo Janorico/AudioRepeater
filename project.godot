@@ -1,0 +1,45 @@
+; Engine configuration file.
+; It's best edited using the editor UI and not directly,
+; since the parameters that go here are not all obvious.
+;
+; Format:
+;   [section] ; section goes between []
+;   param=value ; assign values to parameters
+
+config_version=4
+
+[application]
+
+config/name="AudioRepeater"
+run/main_scene="res://main.tscn"
+config/use_custom_user_dir=true
+config/custom_user_dir_name="Janorico/AudioRepeater"
+run/low_processor_mode=true
+boot_splash/image="res://assets/logo/logo.png"
+config/icon="res://assets/logo/logo.svg"
+
+[audio]
+
+default_bus_layout="res://assets/bus_layout.tres"
+enable_audio_input=true
+
+[display]
+
+window/size/width=640
+window/size/height=360
+window/handheld/orientation="sensor"
+
+[gui]
+
+theme/use_hidpi.Android=true
+
+[logging]
+
+file_logging/log_path="user://audio_repeater.log"
+file_logging/log_path.debug="user://audio_repeater.debug.log"
+
+[rendering]
+
+quality/driver/driver_name="GLES2"
+vram_compression/import_etc=true
+vram_compression/import_etc2=false
